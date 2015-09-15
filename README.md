@@ -20,6 +20,8 @@ Put your [Sonatype OSS](https://oss.sonatype.org/) credentials into your `.m2/se
 ```
 
 ## Snapshot
+
+Shouldn't be needed in most cases, as `master` is automatically deployed, but just in case:
 ```sh
 mvn deploy
 ```
