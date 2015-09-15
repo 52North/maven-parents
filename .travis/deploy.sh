@@ -17,5 +17,10 @@ stop() {
 [ "${TRAVIS_PULL_REQUEST}" == "false" ] \
   || stop "no deployment for pull requests"
 
+if ! grep '<version>' pom.xml | head -1 | grep SNAPSHOT; then
+  stop "no deployment of release version"
+fi
 
 mvn deploy -DskipTests=true --settings ".travis/maven-settings.xml"
+
+
