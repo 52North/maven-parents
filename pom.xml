@@ -310,6 +310,9 @@
                                     <id>sonatype-nexus-snapshots</id>
                                 </allowedRepositories>
                                 <allowedPluginRepositories></allowedPluginRepositories>
+                                <requireJavaVersion>
+                                    <version>[1.7,)</version>
+                                </requireJavaVersion>
                             </requireNoRepositories>
                             <requirePluginVersions>
                                 <banLatest>true</banLatest>

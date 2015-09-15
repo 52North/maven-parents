@@ -1,12 +1,11 @@
 language: java
 sudo: false
 jdk:
-- openjdk6
 - openjdk7
 - oraclejdk7
 - oraclejdk8
 install: true
-script: mvn clean install -P check
+script: mvn clean install
 after_script: "./.travis/deploy.sh"
 env:
   global:
