@@ -1,5 +1,17 @@
 # Parent POM's for 52°North [![Build Status](https://travis-ci.org/52North/maven-parents.svg?branch=master)](https://travis-ci.org/52North/maven-parents)
 
+# Usage
+
+To apply the 52°North parent pom in your project, add the following to your project's `pom.xml` file.
+
+```xml
+<parent>
+    <groupId>org.n52</groupId>
+    <artifactId>parent</artifactId>
+    <version>1-SNAPSHOT</version>
+</parent>
+```
+
 # Deployment
 
 Put your [Sonatype OSS](https://oss.sonatype.org/) credentials into your `.m2/settings.xml` like this:
