@@ -24,6 +24,35 @@
 </repositories>
 ```
 
+### Define respositories
+```xml
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-enforcer-plugin</artifactId>
+    <executions>
+        <execution>
+            <goals>
+                <goal>enforce</goal>
+            </goals>
+            <configuration>
+                <rules>
+                   <requireNoRepositories>
+                    <!-- Allow repositories -->
+                       <banRepositories>false</banRepositories>
+                       <!-- Allow SNAPSHOT repositories -->
+                       <allowSnapshotRepositories>true</allowSnapshotRepositories>
+                       <!-- Define allowed repositories, use repo id -->
+                       <allowedRepositories>
+                            <id>repo ids</id>
+                       </allowedRepositories>
+                   </requireNoRepositories>
+                </rules>
+            </configuration>
+        </execution>
+    </executions>
+</plugin>
+```
+
 ## Deployment
 
 Put your [Sonatype OSS](https://oss.sonatype.org/) credentials into your `.m2/settings.xml` like this:
