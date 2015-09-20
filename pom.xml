@@ -200,8 +200,8 @@
                     </execution>
                 </executions>
             </plugin>
-			
-			<plugin>
+            
+            <plugin>
                 <artifactId>whitespace-maven-plugin</artifactId>
                 <groupId>com.github.dantwining.whitespace-maven-plugin</groupId>
                 <version>1.0.4</version>
