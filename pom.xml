@@ -204,7 +204,6 @@
             <plugin>
                 <artifactId>whitespace-maven-plugin</artifactId>
                 <groupId>com.github.dantwining.whitespace-maven-plugin</groupId>
-                <version>1.0.4</version>
                 <executions>
                     <execution>
                         <phase>process-sources</phase>
@@ -464,6 +463,11 @@
                             <version>6.10.1</version>
                         </dependency>
                     </dependencies>
+                </plugin>
+                <plugin>
+                    <artifactId>whitespace-maven-plugin</artifactId>
+                    <groupId>com.github.dantwining.whitespace-maven-plugin</groupId>
+                    <version>1.0.4</version>
                 </plugin>
             </plugins>
         </pluginManagement>
