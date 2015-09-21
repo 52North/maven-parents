@@ -53,6 +53,23 @@
 </plugin>
 ```
 
+### Ignore specific dependencies from analysis
+
+If you use only constants from a dependency, you may have to declare it explicitly as used:
+
+```xml
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-dependency-plugin</artifactId>
+    <configuration>
+    	<usedDependencies>
+    		<usedDependency>${groupId}:${artifactId}</usedDependency>
+    	</usedDependencies>
+    </configuration>
+</plugin>
+```
+
+
 ## Deployment
 
 Put your [Sonatype OSS](https://oss.sonatype.org/) credentials into your `.m2/settings.xml` like this:
