@@ -201,6 +201,19 @@
                 </executions>
             </plugin>
             
+            <plugin>
+                <groupId>com.github.dantwining.whitespace-maven-plugin</groupId>
+                <artifactId>whitespace-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>process-sources</phase>
+                        <goals>
+                            <goal>trim</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            
         </plugins>
         
         <pluginManagement>
@@ -450,6 +463,11 @@
                             <version>6.10.1</version>
                         </dependency>
                     </dependencies>
+                </plugin>
+                <plugin>
+                    <groupId>com.github.dantwining.whitespace-maven-plugin</groupId>
+                    <artifactId>whitespace-maven-plugin</artifactId>
+                    <version>1.0.4</version>
                 </plugin>
             </plugins>
         </pluginManagement>
