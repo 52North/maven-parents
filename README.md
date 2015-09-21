@@ -24,7 +24,7 @@
 </repositories>
 ```
 
-### Define respositories
+### Define additional repositories in your pom file
 ```xml
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
