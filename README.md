@@ -2,6 +2,7 @@
 
 ## Usage
 
+To apply the 52°North parent pom in your project, add the following to your project's `pom.xml` file.
 ```xml
 <parent>
     <groupId>org.n52</groupId>
@@ -67,6 +68,27 @@ If you use only constants from a dependency, you may have to declare it explicit
     	</usedDependencies>
     </configuration>
 </plugin>
+```
+
+### Unused listed dependencies
+
+If you have dependencies that are used only at runtime, e.g. SAXON XSLT processor or a logging framework such as log4j encapsuled by slf4j, then you must include these dependencies as `runtime` as shown in the example below. Otherwise the enforcer plugin will complain about unused dependencies.
+
+```xml
+[..]
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-slf4j-impl</artifactId>
+    <version>${version.log4j}</version>
+    <scope>runtime</scope>
+</dependency>
+<dependency>
+    <groupId>net.sf.saxon</groupId>
+    <artifactId>Saxon-HE</artifactId>
+    <version>9.6.0-7</version>
+    <scope>runtime</scope>
+</dependency>
+[..]
 ```
 
 
