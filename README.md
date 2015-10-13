@@ -1,4 +1,4 @@
-# Parent POM's for 52°North [![Build Status](https://travis-ci.org/52North/maven-parents.svg?branch=master)](https://travis-ci.org/52North/maven-parents)
+# Parent POM's for 52°North [![Build Status](https://travis-ci.org/52North/maven-parents.svg?branch=master)](https://travis-ci.org/52North/maven-parents) [![Dependency Status](https://www.versioneye.com/user/projects/561cc47ea193340f32001647/badge.svg?style=flat)](https://www.versioneye.com/user/projects/561cc47ea193340f32001647)
 
 ## Usage
 
