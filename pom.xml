@@ -52,8 +52,8 @@
 
     <scm>
         <url>https://github.com/52North/maven-parents</url>
-        <connection>scm:git:git://github.com/52North/maven-parents.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/52North/maven-parents.git</developerConnection>
+        <connection>scm:git:https://github.com/52North/maven-parents.git</connection>
+        <developerConnection>scm:git:https://github.com/52North/maven-parents.git</developerConnection>
     </scm>
 
     <issueManagement>
@@ -269,7 +269,7 @@
                 <plugin>
                     <groupId>pl.project13.maven</groupId>
                     <artifactId>git-commit-id-plugin</artifactId>
-                    <version>2.1.13</version>
+                    <version>2.2.0</version>
                     <configuration>
                         <dateFormat>yyyy-MM-dd HH:mm:ssZ</dateFormat>
                         <gitDescribe>
@@ -309,7 +309,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
-                    <version>1.4</version>
+                    <version>1.4.1</version>
                     <configuration>
                         <rules>
                             <dependencyConvergence/>
@@ -346,7 +346,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>findbugs-maven-plugin</artifactId>
-                    <version>3.0.1</version>
+                    <version>3.0.2</version>
                 </plugin>
 
                 <plugin>
@@ -405,7 +405,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-assembly-plugin</artifactId>
-                    <version>2.5.5</version>
+                    <version>2.6</version>
                 </plugin>
 
                 <plugin>
@@ -460,7 +460,7 @@
                         <dependency>
                             <groupId>com.puppycrawl.tools</groupId>
                             <artifactId>checkstyle</artifactId>
-                            <version>6.10.1</version>
+                            <version>6.11.2</version>
                         </dependency>
                     </dependencies>
                 </plugin>
