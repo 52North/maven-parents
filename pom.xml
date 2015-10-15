@@ -52,7 +52,7 @@
         <url>https://github.com/52North/maven-parents</url>
         <connection>scm:git:https://github.com/52North/maven-parents.git</connection>
         <developerConnection>scm:git:https://github.com/52North/maven-parents.git</developerConnection>
-      <tag>HEAD</tag>
+        <tag>HEAD</tag>
   </scm>
 
     <issueManagement>
@@ -76,19 +76,6 @@
         </snapshotRepository>
     </distributionManagement>
     
-    <repositories>
-        <repository>
-            <id>sonatype-nexus-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-        </repository>
-    </repositories>
-
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
