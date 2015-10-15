@@ -17,14 +17,12 @@
     limitations under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.n52</groupId>
     <artifactId>parent</artifactId>
-    <version>1-SNAPSHOT</version>
+    <version>1</version>
 
     <packaging>pom</packaging>
 
@@ -54,7 +52,8 @@
         <url>https://github.com/52North/maven-parents</url>
         <connection>scm:git:https://github.com/52North/maven-parents.git</connection>
         <developerConnection>scm:git:https://github.com/52North/maven-parents.git</developerConnection>
-    </scm>
+      <tag>v1</tag>
+  </scm>
 
     <issueManagement>
         <system>GitHub issues</system>
@@ -312,7 +311,7 @@
                     <version>1.4.1</version>
                     <configuration>
                         <rules>
-                            <dependencyConvergence/>
+                            <dependencyConvergence />
                             <reactorModuleConvergence />
                             <requireNoRepositories>
                                 <banRepositories>true</banRepositories>
@@ -322,7 +321,7 @@
                                 <allowedRepositories>
                                     <id>sonatype-nexus-snapshots</id>
                                 </allowedRepositories>
-                                <allowedPluginRepositories></allowedPluginRepositories>
+                                <allowedPluginRepositories />
                             </requireNoRepositories>
                             <requireJavaVersion>
                                 <version>[1.7,)</version>
@@ -424,34 +423,34 @@
                         <checkstyleRules>
                             <module name="Checker">
                                 <module name="TreeWalker">
-                                    <module name="OneStatementPerLine"/>
-                                    <module name="MultipleVariableDeclarations"/>
-                                    <module name="MissingSwitchDefault"/>
-                                    <module name="AvoidStarImport"/>
-                                    <module name="OneTopLevelClass"/>
-                                    <module name="NeedBraces"/>
-                                    <module name="NoLineWrap"/>
-                                    <module name="FallThrough"/>
+                                    <module name="OneStatementPerLine" />
+                                    <module name="MultipleVariableDeclarations" />
+                                    <module name="MissingSwitchDefault" />
+                                    <module name="AvoidStarImport" />
+                                    <module name="OneTopLevelClass" />
+                                    <module name="NeedBraces" />
+                                    <module name="NoLineWrap" />
+                                    <module name="FallThrough" />
                                     <!--
                                         not usable due to lambdas
                                         https://github.com/checkstyle/checkstyle/issues/281
                                     <module name="Indentation">
-                                        <property name="basicOffset" value="4"/>
-                                        <property name="braceAdjustment" value="0"/>
-                                        <property name="caseIndent" value="4"/>
-                                        <property name="throwsIndent" value="4"/>
-                                        <property name="lineWrappingIndentation" value="4"/>
-                                        <property name="arrayInitIndent" value="4"/>
+                                        <property name="basicOffset" value="4" />
+                                        <property name="braceAdjustment" value="0" />
+                                        <property name="caseIndent" value="4" />
+                                        <property name="throwsIndent" value="4" />
+                                        <property name="lineWrappingIndentation" value="4" />
+                                        <property name="arrayInitIndent" value="4" />
                                     </module>
                                     -->
                                 </module>
                                 <module name="FileTabCharacter">
-                                    <property name="eachLine" value="true"/>
-                                    <property name="fileExtensions" value="java"/>
+                                    <property name="eachLine" value="true" />
+                                    <property name="fileExtensions" value="java" />
                                 </module>
                                 <module name="RegexpSingleline">
-                                    <property name="format" value="\s+$"/>
-                                    <property name="message" value="Line contains trailing whitespace."/>
+                                    <property name="format" value="\s+$" />
+                                    <property name="message" value="Line contains trailing whitespace." />
                                 </module>
                             </module>
                         </checkstyleRules>
