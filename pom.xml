@@ -52,8 +52,8 @@
 
     <scm>
         <url>https://github.com/52North/maven-parents</url>
-        <connection>scm:git:git://github.com/52North/maven-parents.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/52North/maven-parents.git</developerConnection>
+        <connection>scm:git:https://github.com/52North/maven-parents.git</connection>
+        <developerConnection>scm:git:https://github.com/52North/maven-parents.git</developerConnection>
     </scm>
 
     <issueManagement>
