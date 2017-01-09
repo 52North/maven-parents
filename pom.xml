@@ -193,6 +193,8 @@
                     <configuration>
                         <tagNameFormat>v@{project.version}</tagNameFormat>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
+                        <releaseProfiles>check,sign</releaseProfiles>
+                        <localCheckout>true</localCheckout>
                     </configuration>
                 </plugin>
 
