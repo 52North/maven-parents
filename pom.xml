@@ -403,7 +403,7 @@
                         <dependency>
                             <groupId>org.n52</groupId>
                             <artifactId>checkstyle-configuration</artifactId>
-                            <version>5-SNAPSHOT</version>
+                            <version>5</version>
                         </dependency>
                     </dependencies>
                 </plugin>
