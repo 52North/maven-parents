@@ -1,22 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-
-    Copyright 2015 52°North Initiative for Geospatial Open Source
-    Software GmbH
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
--->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -25,6 +7,10 @@
     <version>5-SNAPSHOT</version>
 
     <packaging>pom</packaging>
+
+    <modules>
+        <module>checkstyle-configuration</module>
+    </modules>
 
     <name>52°North Maven Parent Project</name>
     <description>52°North Maven Parent Project</description>
@@ -53,7 +39,7 @@
         <connection>scm:git:https://github.com/52North/maven-parents.git</connection>
         <developerConnection>scm:git:https://github.com/52North/maven-parents.git</developerConnection>
         <tag>HEAD</tag>
-  </scm>
+    </scm>
 
     <issueManagement>
         <system>GitHub issues</system>
@@ -75,7 +61,7 @@
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
-    
+
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
@@ -173,20 +159,7 @@
                     </execution>
                 </executions>
             </plugin>
-            
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            
+
             <plugin>
                 <groupId>com.github.dantwining.whitespace-maven-plugin</groupId>
                 <artifactId>whitespace-maven-plugin</artifactId>
@@ -199,9 +172,9 @@
                     </execution>
                 </executions>
             </plugin>
-            
+
         </plugins>
-        
+
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -324,12 +297,6 @@
                 </plugin>
 
                 <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>findbugs-maven-plugin</artifactId>
-                    <version>3.0.4</version>
-                </plugin>
-
-                <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>2.10.4</version>
@@ -340,6 +307,7 @@
                         <nohelp>true</nohelp>
                     </configuration>
                 </plugin>
+
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
@@ -395,60 +363,51 @@
                 </plugin>
 
                 <plugin>
+                    <groupId>com.github.dantwining.whitespace-maven-plugin</groupId>
+                    <artifactId>whitespace-maven-plugin</artifactId>
+                    <version>1.0.4</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>findbugs-maven-plugin</artifactId>
+                    <version>3.0.4</version>
+                    <configuration>
+                        <!--<excludeFilterFile>etc/findbugs-exclude.xml</excludeFilterFile>-->
+                        <!--<includeFilterFile>etc/findbugs-include.xml</includeFilterFile>-->
+                        <!--<visitors></visitors>-->
+                        <!--<omitVisitors></omitVisitors>-->
+                        <!--<maxRank></maxRank>-->
+                        <failOnError>true</failOnError>
+                    </configuration>
+                </plugin>
+
+                <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
                     <version>2.17</version>
                     <configuration>
-                        <logViolationsToConsole>true</logViolationsToConsole>
+                        <consoleOutput>true</consoleOutput>
+                        <!--<logViolationsToConsole>true</logViolationsToConsole>-->
                         <failOnViolation>true</failOnViolation>
-                        <checkstyleRules>
-                            <module name="Checker">
-                                <module name="TreeWalker">
-                                    <module name="OneStatementPerLine" />
-                                    <module name="MultipleVariableDeclarations" />
-                                    <module name="MissingSwitchDefault" />
-                                    <module name="AvoidStarImport" />
-                                    <module name="OneTopLevelClass" />
-                                    <module name="NeedBraces" />
-                                    <module name="NoLineWrap" />
-                                    <module name="FallThrough" />
-                                    <!--
-                                        not usable due to lambdas
-                                        https://github.com/checkstyle/checkstyle/issues/281
-                                    <module name="Indentation">
-                                        <property name="basicOffset" value="4" />
-                                        <property name="braceAdjustment" value="0" />
-                                        <property name="caseIndent" value="4" />
-                                        <property name="throwsIndent" value="4" />
-                                        <property name="lineWrappingIndentation" value="4" />
-                                        <property name="arrayInitIndent" value="4" />
-                                    </module>
-                                    -->
-                                </module>
-                                <module name="FileTabCharacter">
-                                    <property name="eachLine" value="true" />
-                                    <property name="fileExtensions" value="java" />
-                                </module>
-                                <module name="RegexpSingleline">
-                                    <property name="format" value="\s+$" />
-                                    <property name="message" value="Line contains trailing whitespace." />
-                                </module>
-                            </module>
-                        </checkstyleRules>
+                        <violationSeverity>error</violationSeverity>
+                        <excludes>${project.build.directory}/generated-sources/**/*.java</excludes>
+                        <configLocation>checkstyle.xml</configLocation>
                     </configuration>
                     <dependencies>
                         <dependency>
                             <groupId>com.puppycrawl.tools</groupId>
                             <artifactId>checkstyle</artifactId>
-                            <version>6.19</version>
+                            <version>7.3</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>org.n52</groupId>
+                            <artifactId>checkstyle-configuration</artifactId>
+                            <version>5-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                 </plugin>
-                <plugin>
-                    <groupId>com.github.dantwining.whitespace-maven-plugin</groupId>
-                    <artifactId>whitespace-maven-plugin</artifactId>
-                    <version>1.0.4</version>
-                </plugin>
+
             </plugins>
         </pluginManagement>
     </build>
@@ -467,6 +426,41 @@
                                 <phase>verify</phase>
                                 <goals>
                                     <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>check</id>
+            <activation>
+                <property>
+                    <name>env.CI</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>findbugs-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-checkstyle-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>check</goal>
                                 </goals>
                             </execution>
                         </executions>
