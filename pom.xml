@@ -455,6 +455,9 @@
                     <name>env.CI</name>
                     <value>true</value>
                 </property>
+                <file>
+                    <missing>.skip-check</missing>
+                </file>
             </activation>
             <build>
                 <plugins>

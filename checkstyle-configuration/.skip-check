@@ -1,0 +1,3 @@
+this file deactivates the check profile
+for the parent pom as this would introduce
+a circular dependency to a child project
