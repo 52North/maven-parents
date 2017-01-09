@@ -7,22 +7,8 @@ To apply the 52°North parent pom in your project, add the following to your pro
 <parent>
     <groupId>org.n52</groupId>
     <artifactId>parent</artifactId>
-    <version>1-SNAPSHOT</version>
+    <version>5</version>
 </parent>
-
-<!-- TODO remove this once org.n52:parent is released -->
-<repositories>
-    <repository>
-        <id>sonatype-nexus-snapshots</id>
-        <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        <snapshots>
-            <enabled>true</enabled>
-        </snapshots>
-        <releases>
-            <enabled>false</enabled>
-        </releases>
-    </repository>
-</repositories>
 ```
 
 ### Define additional repositories in your pom file
