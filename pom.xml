@@ -74,6 +74,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <version.java>1.8</version.java>
     </properties>
 
     <build>
@@ -254,6 +255,9 @@
                         <compilerArgument>-Xlint:all</compilerArgument>
                         <showWarnings>true</showWarnings>
                         <showDeprecation>true</showDeprecation>
+                        <compilerVersion>${version.java}</compilerVersion>
+                        <source>${version.java}</source>
+                        <target>${version.java}</target>
                     </configuration>
                 </plugin>
 
@@ -286,7 +290,7 @@
                                 <allowedPluginRepositories />
                             </requireNoRepositories>
                             <requireJavaVersion>
-                                <version>[1.7,)</version>
+                                <version>[${version.java},)</version>
                             </requireJavaVersion>
                             <requirePluginVersions>
                                 <banLatest>true</banLatest>
