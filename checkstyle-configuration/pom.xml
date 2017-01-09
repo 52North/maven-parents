@@ -7,7 +7,7 @@
         <version>5-SNAPSHOT</version>
     </parent>
     <artifactId>checkstyle-configuration</artifactId>
-    <name>52&deg;North Checkstyle Configuration</name>
-    <description>52&deg;North Checkstyle Configuration</description>
+    <name>52°North Checkstyle Configuration</name>
+    <description>52°North Checkstyle Configuration</description>
     <packaging>jar</packaging>
 </project>
