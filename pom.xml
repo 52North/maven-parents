@@ -327,7 +327,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
-                    <version>3.0.1</version>
+                    <version>3.0.2</version>
                 </plugin>
 
                 <plugin>
@@ -414,7 +414,7 @@
                         <dependency>
                             <groupId>com.puppycrawl.tools</groupId>
                             <artifactId>checkstyle</artifactId>
-                            <version>7.3</version>
+                            <version>7.4</version>
                         </dependency>
                         <dependency>
                             <groupId>org.n52</groupId>
