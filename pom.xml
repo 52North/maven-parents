@@ -247,6 +247,7 @@
                             <skip>true</skip>
                         </gitDescribe>
                         <timestampFormat>{0,date,yyyy-MM-dd HH:mm:ss}</timestampFormat>
+                        <failOnNoGitDirectory>false</failOnNoGitDirectory>
                     </configuration>
                 </plugin>
 
