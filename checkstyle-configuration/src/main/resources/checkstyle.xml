@@ -108,9 +108,7 @@
 		<module name="OneStatementPerLine"/>
 		<module name="OneTopLevelClass"/>
 		<module name="OuterTypeFilename"/>
-		<module name="OverloadMethodsDeclarationOrder">
-			<property name="severity" value="warning"/>
-		</module>
+		<module name="OverloadMethodsDeclarationOrder" />
 		<module name="PackageAnnotation"/>
 		<module name="PackageDeclaration"/>
 		<module name="PackageName" />
