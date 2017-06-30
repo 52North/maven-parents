@@ -68,6 +68,7 @@
 			<property name="ignoreConstructorParameter" value="true"/>
 			<property name="ignoreSetter" value="true"/>
 			<property name="setterCanReturnItsClass" value="true"/>
+			<property name="tokens" value="VARIABLE_DEF,LAMBDA"/>
 		</module>
 		<module name="IllegalImport"/>
 
