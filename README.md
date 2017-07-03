@@ -89,7 +89,12 @@ Put your [Sonatype OSS](https://oss.sonatype.org/) credentials into your `.m2/se
                               http://maven.apache.org/xsd/settings-1.0.0.xsd">
     <servers>
         <server>
-            <id>ossrh</id>
+            <id>sonatype-nexus-releases</id>
+            <username>$username</username>
+            <password>$password</password>
+        </server>
+        <server>
+            <id>sonatype-nexus-snapshots</id>
             <username>$username</username>
             <password>$password</password>
         </server>
