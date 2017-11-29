@@ -7,7 +7,7 @@ To apply the 52°North parent pom in your project, add the following to your pro
 <parent>
     <groupId>org.n52</groupId>
     <artifactId>parent</artifactId>
-    <version>7</version>
+    <version>9</version>
 </parent>
 ```
 
@@ -112,5 +112,5 @@ mvn deploy
 ### Release
 ```sh
 mvn release:prepare
-mvn release:perform -P sign
+mvn release:perform
 ```
