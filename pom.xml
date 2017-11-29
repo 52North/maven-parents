@@ -220,6 +220,7 @@
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <releaseProfiles>check,sign</releaseProfiles>
                         <localCheckout>true</localCheckout>
+                        <preparationGoals>clean install</preparationGoals>
                     </configuration>
                 </plugin>
 
