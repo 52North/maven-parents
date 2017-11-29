@@ -4,7 +4,7 @@
 
     <groupId>org.n52</groupId>
     <artifactId>parent</artifactId>
-    <version>10-SNAPSHOT</version>
+    <version>10</version>
 
     <packaging>pom</packaging>
 
@@ -38,7 +38,7 @@
         <url>https://github.com/52North/maven-parents</url>
         <connection>scm:git:https://github.com/52North/maven-parents.git</connection>
         <developerConnection>scm:git:https://github.com/52North/maven-parents.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>v10</tag>
     </scm>
 
     <issueManagement>
@@ -437,7 +437,7 @@
                         <dependency>
                             <groupId>org.n52</groupId>
                             <artifactId>checkstyle-configuration</artifactId>
-                            <version>10-SNAPSHOT</version>
+                            <version>10</version>
                         </dependency>
                     </dependencies>
                 </plugin>
