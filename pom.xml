@@ -132,6 +132,30 @@
                             <goal>analyze-only</goal>
                         </goals>
                     </execution>
+                    <execution>
+                        <id>download-sources</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>resolve</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>sources</classifier>
+                            <excludeReactor>true</excludeReactor>
+                            <silent>true</silent>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>download-javadoc</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>resolve</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>javadoc</classifier>
+                            <excludeReactor>true</excludeReactor>
+                            <silent>true</silent>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
 
