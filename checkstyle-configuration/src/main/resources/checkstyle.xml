@@ -11,11 +11,10 @@
 		<property name="eachLine" value="true"/>
 		<property name="fileExtensions" value="java"/>
 	</module>
-	<module name="SuppressionCommentFilter"/>
 	<module name="SuppressWarningsFilter" />
 	<module name="TreeWalker">
+        <module name="SuppressionCommentFilter"/>
 		<property name="tabWidth" value="4"/>
-		<module name="FileContentsHolder"/>
 		<module name="AnnotationLocation">
 			<property name="allowSamelineMultipleAnnotations" value="false"/>
 			<property name="allowSamelineSingleParameterlessAnnotation" value="true"/>
