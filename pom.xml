@@ -452,6 +452,8 @@
                         <violationSeverity>error</violationSeverity>
                         <excludes>${project.build.directory}/generated-sources/**/*.java</excludes>
                         <configLocation>checkstyle.xml</configLocation>
+                        <suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
+                        <suppressionsFileExpression>checkstyle.suppressions.file</suppressionsFileExpression>
                     </configuration>
                     <dependencies>
                         <dependency>
