@@ -530,5 +530,26 @@
                 </plugins>
             </build>
         </profile>
+        <profile>
+            <id>no-download</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-dependency-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>download-sources</id>
+                                <phase/>
+                            </execution>
+                            <execution>
+                                <id>download-javadoc</id>
+                                <phase/>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
     </profiles>
 </project>
