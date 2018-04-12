@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.n52</groupId>
         <artifactId>parent</artifactId>
-        <version>12-SNAPSHOT</version>
+        <version>12</version>
     </parent>
     <artifactId>checkstyle-configuration</artifactId>
     <name>52°North Checkstyle Configuration</name>
