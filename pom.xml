@@ -349,7 +349,7 @@
                             <requireJavaVersion>
                                 <!-- 3.0.0-M1 does not recognize new versioning scheme -->
 <!--                                <version>[${version.java},)</version>-->
-                                <version>[1.8,)</version>
+                                <version>[1.${version.java},),[${version.java},)</version>
                             </requireJavaVersion>
                             <requireMavenVersion>
                                 <version>3.5.0</version>
