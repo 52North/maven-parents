@@ -498,6 +498,9 @@
             <activation>
                 <jdk>[9,)</jdk>
             </activation>
+            <properties>
+                <javax-jaxb.version>2.3.0.1</javax-jaxb.version>
+            </properties>
             <build>
                 <pluginManagement>
                     <plugins>
@@ -516,17 +519,17 @@
                                 <dependency>
                                     <groupId>javax.xml.bind</groupId>
                                     <artifactId>jaxb-api</artifactId>
-                                    <version>2.3.1</version>
+                                    <version>${javax-jaxb.version}</version>
                                 </dependency>
                                 <dependency>
                                     <groupId>com.sun.xml.bind</groupId>
                                     <artifactId>jaxb-core</artifactId>
-                                    <version>2.3.1</version>
+                                    <version>${javax-jaxb.version}</version>
                                 </dependency>
                                 <dependency>
                                     <groupId>com.sun.xml.bind</groupId>
                                     <artifactId>jaxb-impl</artifactId>
-                                    <version>2.3.1</version>
+                                    <version>${javax-jaxb.version}</version>
                                 </dependency>
                                 <dependency>
                                     <groupId>javax.activation</groupId>
