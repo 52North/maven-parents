@@ -347,7 +347,9 @@
                                 <allowedPluginRepositories />
                             </requireNoRepositories>
                             <requireJavaVersion>
-                                <version>[${version.java},)</version>
+                                <!-- 3.0.0-M1 does not recognize new versioning scheme -->
+<!--                                <version>[${version.java},)</version>-->
+                                <version>[1.8,)</version>
                             </requireJavaVersion>
                             <requireMavenVersion>
                                 <version>3.5.0</version>
