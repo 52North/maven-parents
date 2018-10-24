@@ -298,8 +298,8 @@
                     <configuration>
                         <generateChildNotices>false</generateChildNotices>
                         <excludeScopes>
-                            <excludeScopes>test</excludeScopes>
-                            <excludeScopes>provided</excludeScopes>
+                            <excludeScope>test</excludeScope>
+                            <excludeScope>provided</excludeScope>
                         </excludeScopes>
                     </configuration>
                 </plugin>
