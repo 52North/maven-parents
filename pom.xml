@@ -449,9 +449,9 @@
                 </plugin>
 
                 <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>findbugs-maven-plugin</artifactId>
-                    <version>3.0.5</version>
+                    <groupId>com.github.spotbugs</groupId>
+                    <artifactId>spotbugs-maven-plugin</artifactId>
+                    <version>3.1.7</version>
                     <configuration>
                         <!--<excludeFilterFile>etc/findbugs-exclude.xml</excludeFilterFile>-->
                         <!--<includeFilterFile>etc/findbugs-include.xml</includeFilterFile>-->
@@ -460,6 +460,13 @@
                         <!--<maxRank></maxRank>-->
                         <failOnError>true</failOnError>
                     </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.github.spotbugs</groupId>
+                            <artifactId>spotbugs</artifactId>
+                            <version>3.1.8</version>
+                        </dependency>
+                    </dependencies>
                 </plugin>
 
                 <plugin>
@@ -578,8 +585,8 @@
             <build>
                 <plugins>
                     <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>findbugs-maven-plugin</artifactId>
+                         <groupId>com.github.spotbugs</groupId>
+                        <artifactId>spotbugs-maven-plugin</artifactId>
                         <executions>
                             <execution>
                                 <goals>
