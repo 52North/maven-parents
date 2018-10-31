@@ -77,7 +77,6 @@
         <version.java>8</version.java>
         <maven.compiler.source>${version.java}</maven.compiler.source>
         <maven.compiler.target>${version.java}</maven.compiler.target>
-        <maven.compiler.release>${version.java}</maven.compiler.release>
         <maven.compiler.version>${version.java}</maven.compiler.version>
     </properties>
 
@@ -509,6 +508,9 @@
             <activation>
                 <jdk>[9,)</jdk>
             </activation>
+            <properties>
+                <maven.compiler.release>${version.java}</maven.compiler.release>
+            </properties>
             <build>
                 <pluginManagement>
                     <plugins>
