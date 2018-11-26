@@ -338,7 +338,8 @@
                     <configuration>
                         <rules>
                             <dependencyConvergence />
-                            <reactorModuleConvergence />
+                            <!-- disable to allow mvn -rf and mvn -pl -->
+                            <!-- <reactorModuleConvergence /> -->
                             <requireNoRepositories>
                                 <banRepositories>true</banRepositories>
                                 <banPluginRepositories>false</banPluginRepositories>
@@ -351,7 +352,7 @@
                             </requireNoRepositories>
                             <requireJavaVersion>
                                 <!-- 3.0.0-M1 does not recognize new versioning scheme -->
-<!--                                <version>[${version.java},)</version>-->
+                                <!-- <version>[${version.java},)</version>-->
                                 <version>[1.${version.java},),[${version.java},)</version>
                             </requireJavaVersion>
                             <requireMavenVersion>
