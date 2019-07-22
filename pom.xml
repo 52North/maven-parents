@@ -455,7 +455,7 @@
                 <plugin>
                     <groupId>com.github.spotbugs</groupId>
                     <artifactId>spotbugs-maven-plugin</artifactId>
-                    <version>3.1.7</version>
+                    <version>3.1.12.1</version>
                     <configuration>
                         <!--<excludeFilterFile>etc/findbugs-exclude.xml</excludeFilterFile>-->
                         <!--<includeFilterFile>etc/findbugs-include.xml</includeFilterFile>-->
@@ -468,7 +468,7 @@
                         <dependency>
                             <groupId>com.github.spotbugs</groupId>
                             <artifactId>spotbugs</artifactId>
-                            <version>3.1.8</version>
+                            <version>3.1.12</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -489,7 +489,7 @@
                         <dependency>
                             <groupId>com.puppycrawl.tools</groupId>
                             <artifactId>checkstyle</artifactId>
-                            <version>8.14</version>
+                            <version>8.22</version>
                         </dependency>
                         <dependency>
                             <groupId>org.n52</groupId>
