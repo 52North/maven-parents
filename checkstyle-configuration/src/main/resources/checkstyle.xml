@@ -12,12 +12,16 @@
 		<property name="fileExtensions" value="java"/>
 	</module>
 	<module name="SuppressWarningsFilter" />
+	<module name="SuppressWithPlainTextCommentFilter">
+		<property name="offCommentFormat" value="// ?CHECKSTYLE:OFF"/>
+		<property name="onCommentFormat" value="// ?CHECKSTYLE:ON"/>
+	</module>
 	<module name="LineLength">
 		<property name="max" value="120"/>
 	</module>
 	<module name="TreeWalker">
-		<module name="SuppressionCommentFilter"/>
 		<property name="tabWidth" value="4"/>
+		<module name="SuppressionCommentFilter"/>
 		<module name="AnnotationLocation">
 			<property name="allowSamelineMultipleAnnotations" value="false"/>
 			<property name="allowSamelineSingleParameterlessAnnotation" value="true"/>
