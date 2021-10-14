@@ -455,7 +455,7 @@
                 <plugin>
                     <groupId>com.github.spotbugs</groupId>
                     <artifactId>spotbugs-maven-plugin</artifactId>
-                    <version>4.3.0</version>
+                    <version>4.4.2</version>
                     <configuration>
                         <!--<excludeFilterFile>etc/findbugs-exclude.xml</excludeFilterFile>-->
                         <!--<includeFilterFile>etc/findbugs-include.xml</includeFilterFile>-->
