@@ -221,7 +221,7 @@
                 <plugin>
                     <groupId>org.sonatype.plugins</groupId>
                     <artifactId>nexus-staging-maven-plugin</artifactId>
-                    <version>1.6.8</version>
+                    <version>1.6.11</version>
                     <configuration>
                         <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                         <serverId>sonatype-nexus-snapshots</serverId>
