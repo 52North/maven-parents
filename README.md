@@ -7,7 +7,7 @@ To apply the 52°North parent pom in your project, add the following to your pro
 <parent>
     <groupId>org.n52</groupId>
     <artifactId>parent</artifactId>
-    <version>21</version>
+    <version>23</version>
 </parent>
 ```
 
