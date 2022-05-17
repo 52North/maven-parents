@@ -10,3 +10,7 @@ updates:
   - dependency-name: com.sun.xml.bind:jaxb-impl
     versions:
     - ">= 3.a, < 4"
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: "daily"
