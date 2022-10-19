@@ -296,8 +296,8 @@
 
                 <plugin>
                     <groupId>org.jasig.maven</groupId>
-                    <artifactId>maven-notice-plugin</artifactId>
-                    <version>1.1.0</version>
+                    <artifactId>notice-maven-plugin</artifactId>
+                    <version>2.0.0</version>
                     <configuration>
                         <generateChildNotices>false</generateChildNotices>
                         <excludeScopes>
