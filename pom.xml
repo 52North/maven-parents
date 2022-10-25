@@ -4,7 +4,7 @@
 
     <groupId>org.n52</groupId>
     <artifactId>parent</artifactId>
-    <version>27</version>
+    <version>28-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
@@ -494,7 +494,7 @@
                         <dependency>
                             <groupId>org.n52</groupId>
                             <artifactId>checkstyle-configuration</artifactId>
-                            <version>27</version>
+                            <version>28-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                 </plugin>
